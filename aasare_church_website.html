@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aasare Church</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #ffd700;
+      --soft-gold: #fff4b3;
+      --dark-gold: #bfa100;
+      --white: #ffffff;
+      --text-dark: #2b2b2b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, var(--gold), var(--white));
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "✝";
+      position: absolute;
+      font-size: 220px;
+      color: rgba(255,215,0,0.15);
+      top: -40px;
+      right: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #4a3b00;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 700px;
+      margin: auto;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a3b00;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background: var(--soft-gold);
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    section {
+      margin-bottom: 70px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: var(--dark-gold);
+      margin-bottom: 15px;
+    }
+    .divider {
+      width: 70px;
+      height: 4px;
+      background: var(--gold);
+      margin-bottom: 25px;
+      border-radius: 10px;
+    }
+    .verse {
+      background: linear-gradient(135deg, var(--soft-gold), var(--white));
+      padding: 30px;
+      border-radius: 16px;
+      font-style: italic;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 80px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    footer {
+      background: linear-gradient(135deg, var(--white), var(--soft-gold));
+      padding: 30px 20px;
+      text-align: center;
+      color: #4a3b00;
+      font-size: 0.95rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      header::after { font-size: 140px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aasare Church</h1>
+  <p>Established in 2016 • Serving with faith, love, and compassion for orphans and elders</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#history">Our History</a>
+  <a href="#testimony">Testimony</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="verse">
+    “Carry each other’s burdens, and in this way you will fulfill the law of Christ.”<br>
+    <strong>– Galatians 6:2</strong>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="divider"></div>
+    <div class="card">
+      <p>
+        Aasare Church is a Christian orphanage and elder-care oriented ministry founded by
+        <strong>Dennis Thamburaj Ebenezer</strong> in 2016. Guided by the teachings of Jesus Christ,
+        we exist to love, serve, protect, and uplift those who are often forgotten by society.
+      </p>
+    </div>
+  </section>
+
+  <section id="history">
+    <h2>Know About Our History</h2>
+    <div class="divider"></div>
+    <div class="card">
+      <!-- History content will be added here -->
+    </div>
+  </section>
+
+  <section id="testimony">
+    <h2>Testimony</h2>
+    <div class="divider"></div>
+    <div class="card">
+      <!-- Testimonies will be added here -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="card">
+        <strong>Address</strong><br><br>
+        Aasare Church,<br>
+        Murali Layout,<br>
+        Subbarayapanapalya-A,<br>
+        Ramohalli Post,<br>
+        Bangalore – 560060
+      </div>
+      <div class="card">
+        <strong>Phone</strong><br><br>
+        +91 74113 12345<br>
+        +91 81235 81235
+      </div>
+      <div class="card">
+        <strong>Email</strong><br><br>
+        aasarechurch@gmail.com
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2016 Aasare Church • Built on faith, hope, and love
+</footer>
+
+</body>
+</html>
